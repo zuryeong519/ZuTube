@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZuTube</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/navigation.css" rel="stylesheet">
+  <link href="css/thumbs.css" rel="stylesheet">
+  <style>
+    .thumbs__item {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .thumbs__item:hover .thumbs__thumbnail {
+      transform: scale(1.05);
+    }
+    .thumbs__thumbnail {
+      transition: transform 0.3s ease;
+    }
+  </style>
+  <script>
+    function openNewPage() {
+      window.open('https://github.com/zuryeong519', '_blank');
+    }
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__wrapper">
+      <h1 class="header__start">
+        <button class="header__hamburger">&#9776;</button>
+        <span class="header__title">ZuTube</span>
+      </h1>
+      <div class="header__center">
+        <form class="header__form" onsubmit="return false;">
+          <input class="header__input--text" placeholder="보고싶은 동영상을 검색하세요.">
+          <button class="header__input--button">검색</button>
+        </form>
+      </div>
+      <div class="header__end">
+        <button class="header__search">&#128269;</button>
+        <div class="header__profile"></div>
+      </div>
+    </div>
+  </header>
+  
+  <nav class="nav">
+    <ul class="nav__wrapper">
+      <li>
+        <button class="nav__icon">&#9829;</button>
+        <button class="nav__menu">Home</button>
+      </li>
+      <li>
+        <button class="nav__icon">&#9829;</button>
+        <button class="nav__menu">인기 동영상</button>
+      </li>
+      <li>
+        <button class="nav__icon">&#9829;</button>
+        <button class="nav__menu">My Page</button>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="thumbs">
+    <div class="thumbs__wrapper">
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/썸네일 제주.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">제주도 여행 vlog Ep1 | 가족여행 코스 추천</h3>
+            <p class="thumbs__text--owner">귤귤</p>
+            <p class="thumbs__text--anal">조회수 800회 &#183; 12시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/고양이.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">고양이와 함께하는 일상 브이로그</h3>
+            <p class="thumbs__text--owner">냥집사</p>
+            <p class="thumbs__text--anal">조회수 138회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/휴학파티.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">휴학 축하파티(?) 일단 즐겨🎉</h3>
+            <p class="thumbs__text--owner">도비</p>
+            <p class="thumbs__text--anal">조회수 200회 &#183; 6시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/시험기간.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">시험 준비하는 대학생의 리얼 라이프📚</h3>
+            <p class="thumbs__text--owner">졸업 연습생</p>
+            <p class="thumbs__text--anal">조회수 1200회 &#183; 23시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/눈사람.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">올라프 눈사람 만들기 도전! ⛄❄️</h3>
+            <p class="thumbs__text--owner">엘사</p>
+            <p class="thumbs__text--anal">조회수 4033회 &#183; 25일 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/일본여행1.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">일본 여행 1편 : 오사카에서의 첫날! 도시탐방🏙️</h3>
+            <p class="thumbs__text--owner">트레블러버</p>
+            <p class="thumbs__text--anal">조회수 10500회 &#183; 12일 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/베이킹.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">초간단 베이킹 레시피 🍪🍰 집에서 쉽게 따라하기</h3>
+            <p class="thumbs__text--owner">빵집 사장</p>
+            <p class="thumbs__text--anal">조회수 140회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/부산여행 먹방.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">부산에서 먹부림🍲 꼭 가봐야 할 맛집들</h3>
+            <p class="thumbs__text--owner">동백</p>
+            <p class="thumbs__text--anal">조회수 384회 &#183; 16시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/생일.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">생일🎁 vlog | 특별한 하루의 기록🎉🎂 </h3>
+            <p class="thumbs__text--owner">HBD</p>
+            <p class="thumbs__text--anal">조회수 2626회 &#183; 14시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/일본여행2.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">일본 여행 2편 : 교토의 전통과 오사카의 맛집투어🍜</h3>
+            <p class="thumbs__text--owner">트레블러버</p>
+            <p class="thumbs__text--anal">조회수 2740회 &#183; 2일 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/무한도전.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">무한도전 레전드 웃긴 영상 모음집 😂 꼭 봐야 할 장면</h3>
+            <p class="thumbs__text--owner">방송국사람</p>
+            <p class="thumbs__text--anal">조회수 2350회 &#183; 7시간 전</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbs__item" onclick="openNewPage()">
+        <img class="thumbs__thumbnail" src="./imgs/일본여행3.jpg">
+        <div class="thumbs__info">
+          <div class="thumbs__profile"></div>
+          <div class="thumbs__text">
+            <h3 class="thumbs__text--title">일본 여행 3편 : 여행 중 우연히 만난 봄 마쯔리🎎🌸</h3>
+            <p class="thumbs__text--owner">트레블러버</p>
+            <p class="thumbs__text--anal">조회수 100회 &#183; 1시간 전</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
